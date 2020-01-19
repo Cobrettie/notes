@@ -34,7 +34,7 @@ testArray.shift();
 
 ```
 testArray.splice();
-// will remove an item aat the specified index that is passed into .splice()
+// will remove an item at the specified index that is passed into .splice()
 ```
 
 ## Helpful Array Manipulating
