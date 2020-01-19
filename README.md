@@ -5,4 +5,4 @@
 ### JavaScript
 
 - [JavaScript](./topics/javascript.md) 
-- [Array Methods](./topics/jsarraymethods.md)
+- [Arrays in JavaScript](./topics/jsarraymethods.md)
