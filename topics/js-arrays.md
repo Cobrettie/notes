@@ -12,7 +12,7 @@
   testArray = ['item1', item2', 'item3'];
   console.log(testArray[0]); // will log item1
   console.log(testArray[1]); // will log item2
-  notice the 0 inside of the brackets, thats an example of zero based indexing. The first item in an array is at index [0]
+  // notice the 0 inside of the brackets when logging to the console, thats an example of zero based indexing. The first item in an array is at index [0]
   ```
 - You can access any item inside of an array
   - select the array
