@@ -4,4 +4,4 @@
 
 ### JavaScript
 
-[JavaScript](./topics/javascript.md) 
+- [JavaScript](./topics/javascript.md) 
