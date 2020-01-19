@@ -1,5 +1,19 @@
 # Array Methods in JavaScript
 
+## Helpful Array Information
+
+- Arrays are mutable, can add items, delete items, etc.
+- Arrays are still an object, with different behavior
+- Arrays are just a special type of object
+  - The ability to store ordered values makes arrays special
+  - Arrays are treated with a key:value pairing system
+  - Arrays have 0 based indexing 
+  ``` testArray = ['item1', item2', 'item3'];
+      console.log(testArray[0]); // will log item1
+      console.log(testArray[1]); // will log item2
+  ```
+  - You can access any item inside of an array
+
 ## Popular Array Methods
 
 - .push() adds an item to the end of an array
