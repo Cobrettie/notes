@@ -20,3 +20,6 @@
 - not hoisted
 - immutable, cannot be reassigned or overridden
 - the most strict of all variable keywords in JS, meaning it has the most rules applied 
+
+### A Comparison of Variables
+![Comparison of Variables in JavaScript](../js-images/jsvariablecomparison.png)
