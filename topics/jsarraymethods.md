@@ -12,7 +12,10 @@
       console.log(testArray[0]); // will log item1
       console.log(testArray[1]); // will log item2
   ```
-  - You can access any item inside of an array
+- You can access any item inside of an array
+  - select the array
+  - use bracket notation to choose which index you want
+  ``` console.log(testArray[2]) // will log item3 ```
 
 ## Popular Array Methods
 
@@ -50,6 +53,12 @@ testArray.shift();
 testArray.splice();
 // will remove an item at the specified index that is passed into .splice()
 ```
+
+## Some Advanced Array Methods
+
+- .map()
+- .reduce()
+- .filter()
 
 ## Helpful Array Manipulating
 
