@@ -24,6 +24,7 @@ const testObject = {
   ``` console.log(testObject.name); ```
 
 - Bracket notation
-  ``` console.log(testObject['age']); // must use quotes when using bracket notation ```
+  - ``` console.log(testObject['age']); // must use quotes when using bracket notation ```
+
   - Bracket notation is ideal when dealing with special characters
-  ``` console.log(testObject['favorite things']); ```
+  - ``` console.log(testObject['favorite things']); ```
