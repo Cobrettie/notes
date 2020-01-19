@@ -14,7 +14,16 @@ Example of object properties
 const testObject = {
   name: 'Your name here',
   age: 25,
-  location: 'Anywhere'
+  location: 'Anywhere',
+  'favorite things': 'this, that, and the other are my favorite things';
 }
-// name, age, location are the <strong>properties</strong>
+// name, age, location, etc. are the properties
 ```
+
+- Dot notation
+  ``` console.log(testObject.name); ```
+
+- Bracket notation
+  ``` console.log(testObject['age']); // must use quotes when using bracket notation ```
+  - Bracket notation is ideal when dealing with special characters
+  ``` console.log(testObject['favorite things']); ```
