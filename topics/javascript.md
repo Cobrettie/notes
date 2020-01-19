@@ -10,13 +10,13 @@
 - Example of variable scope
 ![Variable Scope in JavaScript](../js-images/variable-scoping.png)
 
-- let
-  - block scoped
-  - not hoisted
-  - can be reassigned, but NOT overridden
+### let
+- block scoped
+- not hoisted
+- can be reassigned, but NOT overridden
 
-- const
-  - block scoped
-  - not hoisted
-  - immutable, cannot be reassigned or overridden
-  - the most strict of all variable keywords in JS, meaning it has the most rules applied 
+### const
+- block scoped
+- not hoisted
+- immutable, cannot be reassigned or overridden
+- the most strict of all variable keywords in JS, meaning it has the most rules applied 
