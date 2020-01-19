@@ -8,7 +8,7 @@
   - can be reassigned or overridden i.e redefined or updated
 
 - Example of variable scope
-![Variable Scope in JavaScript] (../js-images/variable-scoping.png)
+![Variable Scope in JavaScript](../js-images/variable-scoping.png)
 
 - let
   - block scoped
