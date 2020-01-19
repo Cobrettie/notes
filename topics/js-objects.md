@@ -5,9 +5,11 @@
 - Object Literal === literally an object in its simplest form
 
 - An object is a collection of related data and/or functionality
-- objects usually consist of variables and functions
+- Objects usually consist of variables and functions
   - the variables inside of objects are called <strong>properties</strong> 
-  - the functions inside of objects are called <strong>Methods</strong>
+  - the functions inside of objects are called <strong>methods</strong>
+- Object literals gain all of the methods that are available to objects
+- An objects vaalues are mutable by default
 
 Example of object properties
 ```
