@@ -2,10 +2,10 @@
 
 ## Variables in JavaScript
 
-- var
-  - function scoped, meaning the variable is only available inside of the function they are created in, unless the variable is declared globally.
-  - hoisted
-  - can be reassigned or overridden i.e redefined or updated
+### var
+- function scoped, meaning the variable is only available inside of the function they are created in, unless the variable is declared globally.
+- hoisted
+- can be reassigned or overridden i.e redefined or updated
 
 - Example of variable scope
 ![Variable Scope in JavaScript](../js-images/variable-scoping.png)
