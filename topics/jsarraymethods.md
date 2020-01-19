@@ -1,6 +1,6 @@
 # Array Methods in JavaScript
 
-## Helpful Array manipulating
+## Helpful Array Manipulating
 
 ### Remove Duplicates from an Array
 
@@ -13,4 +13,3 @@ const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
 
 let unique = [...new Set(names)];
 ```
-
