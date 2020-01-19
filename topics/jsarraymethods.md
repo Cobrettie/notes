@@ -1,4 +1,4 @@
-# Array Methods in JavaScript
+# Arrays in JavaScript
 
 ## Helpful Array Information
 
