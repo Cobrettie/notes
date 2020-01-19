@@ -23,3 +23,6 @@
 
 ### A Comparison of Variables
 ![Comparison of Variables in JavaScript](../js-images/jsvariablecomparison.png)
+
+### Lambda School Rule of Thumb
+- When defining/declaring variables, use const until you can't, then use let
