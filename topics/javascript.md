@@ -91,11 +91,13 @@ console.log(add(5, 8));
   - The concept of putting a variable/function higher in the execution order for later use is known as <strong>hoisting</strong>
   - variables/functions can be called before they are declared
   
-  ## Function Expression
+## Function Expression
 
-  - Function expressions have unique differences when compared against function declarations. 
-    - A variable is used to store the function for later use
-      ``` let testFunction = function(testParam) { console.log('hi from testFunction') }; ```
-    - Anonymous functions are used. Notice in the above code block how the function isn't actually named, meaning it is an anonymous function
-    - Function expressions are not hoisted. 
-      - they can only be invoked after a definition has been placed in the execution order
+- Function expressions have unique differences when compared against function declarations. 
+  - A variable is used to store the function for later use
+    ``` 
+    let testFunction = function(testParam) { console.log('hi from testFunction') }; 
+    ```
+  - Anonymous functions are used. Notice in the above code block how the function isn't actually named, meaning it is an anonymous function
+  - Function expressions are not hoisted. 
+    - they can only be invoked after a definition has been placed in the execution order
