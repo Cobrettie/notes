@@ -96,8 +96,35 @@ console.log(add(5, 8));
 - Function expressions have unique differences when compared against function declarations. 
   - A variable is used to store the function for later use
     ``` 
-    let testFunction = function(testParam) { console.log('hi from testFunction') }; 
+    let testFunction = function(testParam) { 
+      console.log('hi from testFunction'); 
+    } 
     ```
   - Anonymous functions are used. Notice in the above code block how the function isn't actually named, meaning it is an anonymous function
+    - Because we are using a named variable, we don't need to name our function. 
   - Function expressions are not hoisted. 
-    - they can only be invoked after a definition has been placed in the execution order
+    - they can only be invoked after a definition has been placed in the execution order, i.e. the function will only run after invocation
+  - Why use a function expression over a function declaration?
+    - more control over code
+    - since a function expression can't be hoisted, we can tell it <strong>when</strong> to do it's job easier
+    - can place functions within functions easier without having to name them
+
+## Arrow Functions
+
+- Arrow functions are fancy looking function expressions, with a major feature removed, the <strong>this</strong> keyword
+
+basic arrow function expression syntax
+```
+const add = (a, b) => a + b;
+const add = (a, b) => {
+  return a + b;
+}
+// both are valid, arrow functions allow for more streamlined code
+// be careful with how slim(streamlined) you get, readability is always important
+```
+
+### When not to use arrow functions
+
+- Event handlers (unless the event handler is inside a class constructor)
+- Object methods
+- Prototype methods
