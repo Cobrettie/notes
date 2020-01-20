@@ -56,6 +56,12 @@ function tester() {
   - these values are known as arguments
   - the function receives the arguments as parameters, in the order they were called
 - this is worth repeating, <strong>arguments are values that are passed into a function, the function receives the arguments as parameters</strong>
+- Functions create their own scope
+  - 2 types of scope in JavaScript
+    - Global
+    - Local
+- Functions are simply a set of instructions to complete a task
+- Functions are a Type in JS, just like bolean, number, string, etc
 
 ### The return statement
 
@@ -113,7 +119,7 @@ console.log(add(5, 8));
 
 - Arrow functions are fancy looking function expressions, with a major feature removed, the <strong>this</strong> keyword
 
-basic arrow function expression syntax
+- basic arrow function expression syntax
 ```
 const add = (a, b) => a + b;
 const add = (a, b) => {
@@ -128,3 +134,52 @@ const add = (a, b) => {
 - Event handlers (unless the event handler is inside a class constructor)
 - Object methods
 - Prototype methods
+
+## Closure in JavaScript
+
+- Big part of JavaScript language, look at closure like <strong><i>"What data do I currently have access to in my program?"</i></strong>
+- <strong>Closure simplified</strong> - a function enclosed in another function
+- <strong>"Technical" closure</strong> - the combination of aa function, and the lexical environment within which that function was declared
+  - lexical = surrounding state
+- Inner functions have access to outer functions
+- In JS, closure is created every time a function is created
+  - the variables or functions declared within that function have the ability to <strong>reach outwards</strong> for context, but <strong>never inwards</strong> - see example below
+- In JS, all functions are also closures
+- example of closure in JS
+```
+const foo = 'bar';
+
+function returnFoo() {
+  let testingClosure = 'hi from inside returnFoo';
+  return foo;
+}
+
+console.log(returnFoo());
+// the code inside of returnFoo has access to the outer scope, returnFoo is reaching outside of it's own scope to find a variable named foo, since foo does not exist within returnFoo's scope 
+
+console.log(testingClosure);
+// will log 'testingClosure is not defined'
+// remember, we can reach outwards for context, never inwards
+```
+
+- <strong>Simply put,</strong> if a function can't find a variable within it's own scope, the function will look outside of it's scope to find the variable
+- this is what closure is all about
+
+## Callback Functions in JavaScript
+
+### What is a Callback Function?
+
+- <strong>Simply put:</strong> A callback is a function that is to be executed, after another function has finished executing. Hence the name 'callback'
+
+- <strong>Complexly put:</strong> In JavaScript, functions are objects. Functions can take other functions as arguments, and can be returned by other functions. 
+  - Functions that do this are called <strong>Higher-Order functions</strong>
+- Any function that is passed as an argument is called a <strong>callback function</strong>
+- From <strong>MDN:</strong> A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+### About Callback Functions
+
+- callbacks are a way to make sure certain code doesn't execute, until other code has finished executing.
+- example of a callback function
+```
+
+```
