@@ -179,7 +179,19 @@ console.log(testingClosure);
 ### About Callback Functions
 
 - callbacks are a way to make sure certain code doesn't execute, until other code has finished executing.
-- example of a callback function
+- example of a callback function from MDN
 ```
+function greeting(name) {
+  alert('Hello ' + name)
+}
 
+function processUserInput(callback) {
+  let name = prompt('Please enter your name');
+  callback(name);
+}
+
+processUserInput(greeting);
+
+// a bit confusing at first
+// the above example is a synchrounous callback, because it is executed immediately
 ```
