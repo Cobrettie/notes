@@ -169,7 +169,7 @@ console.log(testingClosure);
 
 ### What is a Callback Function?
 
-- <strong>Simply put:</strong> A callback is a function that is to be executed, after another function has finished executing. Hence the name 'callback'
+- <strong>Simply put:</strong> Callback functions are just functions passed into other functions as arguments. A callback is a function that is to be executed, after another function has finished executing. Hence the name 'callback'
 
 - <strong>Complexly put:</strong> In JavaScript, functions are objects. Functions can take other functions as arguments, and can be returned by other functions. 
   - Functions that do this are called <strong>Higher-Order functions</strong>
@@ -195,3 +195,7 @@ processUserInput(greeting);
 // a bit confusing at first
 // the above example is a synchrounous callback, because it is executed immediately
 ```
+
+
+SCRATCH NOTES
+
