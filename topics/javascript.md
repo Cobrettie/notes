@@ -193,9 +193,6 @@ function processUserInput(callback) {
 processUserInput(greeting);
 
 // a bit confusing at first
-// the above example is a synchrounous callback, because it is executed immediately
+// the above example is a synchronous callback, because it is executed immediately
 ```
-
-
-SCRATCH NOTES
 
