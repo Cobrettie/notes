@@ -196,3 +196,4 @@ processUserInput(greeting);
 // the above example is a synchronous callback, because it is executed immediately
 ```
 
+<!-- JavaScript -->
