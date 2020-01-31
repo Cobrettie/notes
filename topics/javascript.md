@@ -16,9 +16,9 @@ ECMA-262 describes it like this:
 ECMAScript can provide core scripting capabilities for a variety of host environments, and therefore the core scripting language is specified... apart from any particular host environment.
 ```
 
-A Web browser is considered a host environment for ECMAScript, but it is not the only host environment. A list of other host environments listed here.
+A Web browser is considered a host environment for ECMAScript, but it is not the only host environment
 
-Apart from DOM and BOM, each browser has its own implementation of the ECMAScript interface.
+Apart from DOM and BOM, each browser has its own implementation of the ECMAScript interface
 
 ## Document Object Model (DOM)
 
