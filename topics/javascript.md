@@ -4,7 +4,7 @@
 
 The complete JavaScript implementation is made up of three distinct parts:
 
--   The Core (based on ECMAScript spec)
+-   The Core (based on ECMAScript specs)
 -   The Document Object Model (DOM)
 -   The Browser Object Model (BOM)
 
