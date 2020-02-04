@@ -255,8 +255,28 @@ processUserInput(greeting);
 
 ## Prototypes in Javascript
 
- A <strong>prototype</strong> is another object, that is used as a fallback source of properties
-  - When an object gets a request for a property, if the object does not have the requested property, its prototype will be searched for the property. Then the prototype's prototype will be searched, and so on.     
+A <strong>prototype</strong> is another object, that is used as a fallback source of properties
+  - When an object gets a request for a property, if the object does not have the requested property, its prototype will be searched for the property. Then the prototype's prototype will be searched, and so on.
 
-<!-- JavaScript -->
-<!--  -->
+<strong>Object.prototype</strong>, the entity behind almost all objects
+
+<strong>Object.getPrototypeOf</strong> returns the prototype of an object
+
+Functions derive from <strong>Function.prototype</strong>
+
+Arrays derive from <strong>Array.prototype</strong>
+
+- To create an object with a specific prototype, use <strong>Object.create</strong>
+```
+let protoRabit = {
+  speak(line) {
+    console.log(`The ${this.type} rabbit says '${line}'`);
+  }
+};
+
+let killerRabit = Object.create(protoRabit);
+killerRabit.type = "friendly";
+killerRabit.speak("hello friend");
+
+// The friendly rabbit says 'hello friend' - will be logged to the console
+```
