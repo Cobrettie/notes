@@ -253,5 +253,10 @@ processUserInput(greeting);
 // the above example is a synchronous callback, because it is executed immediately
 ```
 
+## Prototypes in Javascript
+
+- A <strong>prototype</strong> is another object, that is used as a fallback source of properties
+  - When an object gets a request for a property, if the object does not have the requested property, its prototype will be searched for the property. Then the prototype's prototype will be searched, and so on.     
+
 <!-- JavaScript -->
 <!--  -->
