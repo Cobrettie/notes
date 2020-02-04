@@ -266,7 +266,7 @@ Functions derive from <strong>Function.prototype</strong>
 
 Arrays derive from <strong>Array.prototype</strong>
 
-- To create an object with a specific prototype, use <strong>Object.create</strong>
+To create an object with a specific prototype, use <strong>Object.create</strong>
 ```
 let protoRabit = {
   speak(line) {
@@ -280,3 +280,7 @@ killerRabit.speak("hello friend");
 
 // The friendly rabbit says 'hello friend' - will be logged to the console
 ```
+
+  - notice in our protoRabit object expression the method speak(line) {}
+  - a property like speak(line) in an object expression is a shorthand way of defining a method
+  - it creates a property called speak, and gives it a function as its value 
