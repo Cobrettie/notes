@@ -285,4 +285,3 @@ killerRabit.speak("hello friend");
   - a property like speak(line) in an object expression is a shorthand way of defining a method
   - it creates a property called speak, and gives it a function as its value 
 
-  
