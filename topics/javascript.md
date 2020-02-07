@@ -253,6 +253,10 @@ processUserInput(greeting);
 // the above example is a synchronous callback, because it is executed immediately
 ```
 
+## 'this' in JavaScript
+
+- 'this' is a pointer to an Object
+
 ## Prototypes in Javascript
 
 A <strong>prototype</strong> is another object, that is used as a fallback source of properties
