@@ -255,7 +255,11 @@ processUserInput(greeting);
 
 ## 'this' in JavaScript
 
-- 'this' is a pointer to an Object
+- used in many languages
+- 
+- points to an object
+- gives you the object's context
+
 
 ## Prototypes in Javascript
 
