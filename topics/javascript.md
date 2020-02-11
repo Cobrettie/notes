@@ -284,11 +284,17 @@ processUserInput(greeting);
 
 - foundational to OOP (object oriented programming) in JS
 
-- All objects in JS have a prototype property by default
-  - this property is used as an object to attach methods & other properties, that can be delegated down to other child functions/objects
+- the mechanism by which all JS objects inherit from one another
 
-- A <strong>prototype</strong> is another object, that is used as a fallback source of properties
+- A <strong>prototype</strong> is an object, used by other objects, to hold values that can be passed down to other objects
   - When an object gets a request for a property, if the object does not have the requested property, its prototype will be searched for the property. Then the prototype's prototype will be searched, and so on.
+
+- All objects in JS have a prototype property by default
+  - this property is used as an object 
+    - to attach methods & other properties, to other child functions/objects
+
+- To create an object with a specific prototype, use <strong>Object.create</strong>
+  - when using classes in JS, this link is given to us
 
 - <strong>Object.prototype</strong>, the mechanism by which all objects can inherit from one another
 
@@ -298,5 +304,4 @@ processUserInput(greeting);
 
 - Arrays derive from <strong>Array.prototype</strong>
 
-- To create an object with a specific prototype, use <strong>Object.create</strong>
 
