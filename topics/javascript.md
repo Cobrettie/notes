@@ -316,9 +316,26 @@ processUserInput(greeting);
 
 - Classes in JS are just special functions, utilizing constructors and prototypes under the hood
 
+- Classes will return objects
+
 - <strong>Class Declaration</strong>
   - way to define a class
   - Not hoisted - must first declare the class before accessing it
+  ```
+  class Rectangle {
+    constructor(height, width) {
+      this.height = height;
+      this.width = width;
+    }
+  }
+  // height and width are attributes we want to store on our created object
+  ```
+
+#### Create an Object from a Class
+
+```
+const newRect = new Rectangle(400, 500);
+```
 
 - <strong>Class Expression</strong>
   - another way to define a class
@@ -335,5 +352,15 @@ processUserInput(greeting);
 
 - can have only <strong>one</strong> constructor per class
 
-- uses <stong>super()</stong> to call the constructor of the super class
+- uses <strong>super()</strong> to call the constructor of the super class
 
+- when a constructor method is present, you will build your object's properties inside of the constructor() body using <strong>this</strong>
+  - reference Class Declaration example
+
+#### Inheritance with Classes
+
+- <strong>extends</strong> = keyword used in class declarations/expressions to create a class, that is a child of another class
+  - <strong>extends</strong> allows the child to inherit all properties from the parent
+  - if you are using <strong>extends</strong>, you have to call <strong>super()</strong> in the constructor method to inherit from the parent
+
+- <strong>super</strong> = keyword used to access & call functions on aan object's parent
