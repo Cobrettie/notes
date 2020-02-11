@@ -262,6 +262,21 @@ processUserInput(greeting);
 - when using <strong>this</strong>, understand <strong>where</strong> a function is called
   - if you know a functions context, that will help point to <strong>this</strong>
 
+### Four principals 
+
+#### 1. Window/Global Object Binding
+- When in global scope, <strong>this</strong> will be the window/console object
+
+#### 2. Implicit Binding
+- most common use of <strong>this</strong>
+- when a preceding dot calls a function, the object before the dot is <strong>this</strong>
+
+#### 3. Explicit Binding
+- when using JavaScript's <strong>.call()</strong> or <strong>.apply()</strong> method, <strong>this</strong> is explicitly defined.
+
+#### 4. New Binding
+- when using a constructor function, <strong>this</strong> refers to the specific instance of the object, that is created and returned by the constructor function
+
 
 ## Prototypes in Javascript
 
