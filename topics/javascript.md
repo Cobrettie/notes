@@ -350,17 +350,23 @@ const newRect = new Rectangle(400, 500);
 
 - special method for creating & initializing an object with a class
 
-- can have only <strong>one</strong> constructor per class
+- can have only one constructor per class
 
 - uses <strong>super()</strong> to call the constructor of the super class
 
 - when a constructor method is present, you will build your object's properties inside of the constructor() body using <strong>this</strong>
   - reference Class Declaration example
 
+- the object our class returns will have attributes assigned to it from the constructor()
+
 #### Inheritance with Classes
 
 - <strong>extends</strong> = keyword used in class declarations/expressions to create a class, that is a child of another class
   - <strong>extends</strong> allows the child to inherit all properties from the parent
-  - if you are using <strong>extends</strong>, you have to call <strong>super()</strong> in the constructor method to inherit from the parent
+  - if you are using <strong>extends</strong>, you have to call <strong>super()</strong> in the constructor method to pass new attributes back up to the parent object's constructor
+  - <strong>extends</strong> takes the place of the .call() method
+  - look for <strong>extends</strong> to find sub-classes
 
-- <strong>super</strong> = keyword used to access & call functions on aan object's parent
+- <strong>super</strong> = keyword used to access & call functions on an object's parent
+  - takes place of Object.create()
+  - binds our object's prototypes together
