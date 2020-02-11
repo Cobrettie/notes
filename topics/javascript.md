@@ -312,4 +312,28 @@ processUserInput(greeting);
   ```
 
 
+## Classes in JavaScript
+
+- Classes in JS are just special functions, utilizing constructors and prototypes under the hood
+
+- <strong>Class Declaration</strong>
+  - way to define a class
+  - Not hoisted - must first declare the class before accessing it
+
+- <strong>Class Expression</strong>
+  - another way to define a class
+  - can be named or unnamed
+
+- The <strong>body</strong> of a class is the part inside of the curly brackets
+  - this is where you define the constructor method, other methods, etc.
+
+- Any properties needed for the class will be done through the <strong>constructor()</strong> method
+
+#### Constructor Method
+
+- special method for creating & initializing an object with a class
+
+- can have only <strong>one</strong> constructor per class
+
+- uses <stong>super()</stong> to call the constructor of the super class
 
