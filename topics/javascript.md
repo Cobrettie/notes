@@ -304,4 +304,12 @@ processUserInput(greeting);
 
 - Arrays derive from <strong>Array.prototype</strong>
 
+- To add a method to a constructor function
+  - go through the prototype
+  ```
+  Car.prototype.reFuel = function() {}
+  // adds reFuel method to the Car constructor function
+  ```
+
+
 
