@@ -280,33 +280,23 @@ processUserInput(greeting);
 
 ## Prototypes in Javascript
 
-A <strong>prototype</strong> is another object, that is used as a fallback source of properties
+- One of the most used under the hood features of the JavaScript language
+
+- foundational to OOP (object oriented programming) in JS
+
+- All objects in JS have a prototype property by default
+  - this property is used as an object to attach methods & other properties, that can be delegated down to other child functions/objects
+
+- A <strong>prototype</strong> is another object, that is used as a fallback source of properties
   - When an object gets a request for a property, if the object does not have the requested property, its prototype will be searched for the property. Then the prototype's prototype will be searched, and so on.
 
-<strong>Object.prototype</strong>, the entity behind almost all objects
+- <strong>Object.prototype</strong>, the mechanism by which all objects can inherit from one another
 
-<strong>Object.getPrototypeOf</strong> returns the prototype of an object
+- <strong>Object.getPrototypeOf</strong> returns the prototype of an object
 
-Functions derive from <strong>Function.prototype</strong>
+- Functions derive from <strong>Function.prototype</strong>
 
-Arrays derive from <strong>Array.prototype</strong>
+- Arrays derive from <strong>Array.prototype</strong>
 
-To create an object with a specific prototype, use <strong>Object.create</strong>
-```
-let protoRabit = {
-  speak(line) {
-    console.log(`The ${this.type} rabbit says '${line}'`);
-  }
-};
-
-let killerRabit = Object.create(protoRabit);
-killerRabit.type = "friendly";
-killerRabit.speak("hello friend");
-
-// The friendly rabbit says 'hello friend' - will be logged to the console
-```
-
-  - notice in our protoRabit object expression the method speak(line) {}
-  - a property like speak(line) in an object expression is a shorthand way of defining a method
-  - it creates a property called speak, and gives it a function as its value 
+- To create an object with a specific prototype, use <strong>Object.create</strong>
 
