@@ -256,9 +256,11 @@ processUserInput(greeting);
 ## 'this' in JavaScript
 
 - used in many languages
-- 
 - points to an object
 - gives you the object's context
+  - you can reference an object without using the object's name
+- when using <strong>this</strong>, understand <strong>where</strong> a function is called
+  - if you know a functions context, that will help point to <strong>this</strong>
 
 
 ## Prototypes in Javascript
