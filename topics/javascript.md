@@ -79,6 +79,11 @@ element.addEventListener('click', event => {
 Event Handlers
 - The callback function from the event listener, is also known as the event handler
 - Event handler takes a single argument
+  - This argument is known as the Event Object
+  - The Event Object is a JS object 
+    - Contains all info about the event, plus info about the element the event happened on
+  - .target is one of the most important properties of the Event Object
+    - .target gives us all info about the DOM node where the event happened
 
 ## Browser Object Model (BOM)
 
