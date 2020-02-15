@@ -13,27 +13,18 @@ The complete JavaScript implementation is made up of three distinct parts:
 ECMA-262 describes it like this:
 
 - ECMAScript can provide core scripting capabilities for a variety of host environments, and therefore the core scripting language is specified... apart from any particular host environment.
-
 - A Web browser is considered a host environment for ECMAScript, but it is not the only host environment
-
 - Apart from DOM and BOM, each browser has its own implementation of the ECMAScript interface
 
 ## Document Object Model (DOM)
 
 - Is an object representation of all elements on a web page 
-
 - Acts as a bridge between the content and the browser
-
 - The DOM maps out an entire page as a document, composed of a hierarchy of nodes, similar to a tree structure - representing the content, style, structure 
-
 - Using the DOM API, nodes can be removed, added, and replaced
-
 - Every DOM element is a node
-
 - Is a language neutral API
-
 - Dynamic
-
 - You can manipulate web pages using the DOM
 
 ### Updating the DOM
@@ -42,34 +33,52 @@ ECMA-262 describes it like this:
   - first, select the element you want to update
   - then, use desired attribute property/method to update the element
 
+### DOM selectors
+
+- There are many DOM selectors, two mains are
+  - getElement... 
+  - querySelector...
+
+- The main difference between the two is that 
+  - getElement... returns an HTMLCollection
+  - querySelector... returns a NodeList
+    - HTMLCollection uses array-like syntax, allowing us to use the method Array.from() to create an array from the HTMLCollection
+    - NodeList can use the forEach() method directly, allowing you to do many things with your NodeList 
+
 ### DOM Important Properties and Methods
 
 Here are a few important DOM properties and methods
 ![DOM properties/methods](../js-images/domproperties-methods.png)
 
-### DOM level 1
+### DOM Events
 
-Consisted of two modules: the DOM Core, which provided a way to map the structure of an XML-based document to allow for easy access to and manipulation of any part of a document, and the DOM HTML, which extended the DOM Core by adding HTML-specific objects and methods.
+Events, event listeners, event handlers
+- Events allow us to interact with the web page
+- Every user interaction is an event
+- For any user interaction, the DOM creates and propagates(spreads) an event object
+  - This event object carries all info about the event, and can also be accessed up the DOM 'tree' 
 
-### DOM Level 2
+Event Listeners
+- Tracking an event (listening), and the action taken after the event
+- We put an event listener on an element
+  - Give that event listener a callback function
+  - When the event is triggered, the callback function runs
+```
+element.addEventListener()
+// takes two arguments
+// 1.) event to listen for - 'click', 'mouseover', 'dblclick', etc.
+// 2.) callback function to run when the event is triggered
 
-Introduced several new modules of the DOM to deal with new types of interfaces:
+element.addEventListener('click', event => {
+  event.target.style.color = 'blue'
+})
+// very basic example of adding an event listener to an element
+// once the element is clicked, the callback function runs, changing the elements color to blue
+```
 
--   DOM Views — describes interfaces to keep track of the various views of a document (that is, the document before CSS styling and the document after CSS styling)
--   DOM Events — describes interfaces for events
--   DOM Style — describes interfaces to deal with CSS-based styles
--   DOM Traversal and Range — describes interfaces to traverse and manipulate a document tree
-
-### DOM Level 3
-
-
-Note that the DOM is not JavaScript-specific, and indeed has been implemented in numerous other languages. For Web browsers, however, the DOM has been implemented using ECMAScript and now makes up a large part of the JavaScript language.
-
-Other DOMs
-
--   Scalable Vector Graphics (SVG)
--   Mathematical Markup Language (MathML)
--   Synchronized Multimedia Integration Language (SMIL)
+Event Handlers
+- The callback function from the event listener, is also known as the event handler
+- Event handler takes a single argument
 
 ## Browser Object Model (BOM)
 
