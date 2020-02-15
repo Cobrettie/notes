@@ -20,28 +20,32 @@ ECMA-262 describes it like this:
 
 ## Document Object Model (DOM)
 
-- is an object representation of all elements on a web page 
+- Is an object representation of all elements on a web page 
 
-- acts as a bridge between the content and the browser
+- Acts as a bridge between the content and the browser
 
-- is a tree like structure, representing the content, style, structure 
+- The DOM maps out an entire page as a document, composed of a hierarchy of nodes, similar to a tree structure - representing the content, style, structure 
 
-- is a language neutral API
-
-- dynamic
+- Using the DOM API, nodes can be removed, added, and replaced
 
 - Every DOM element is a node
 
-- you can manipulate web pages using the DOM
+- Is a language neutral API
+
+- Dynamic
+
+- You can manipulate web pages using the DOM
+
+### Updating the DOM
+
+- Updating the DOM usually happens in two steps
+  - first, select the element you want to update
+  - then, use desired attribute property/method to update the element
 
 ### DOM Important Properties and Methods
 
 Here are a few important DOM properties and methods
 ![DOM properties/methods](../js-images/domproperties-methods.png)
-
-
-
-The DOM maps out an entire page as a document composed of a hierarchy of nodes like a tree structure and using the DOMAPI nodes can be removed, added, and replaced.
 
 ### DOM level 1
 
