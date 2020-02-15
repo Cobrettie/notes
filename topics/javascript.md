@@ -12,25 +12,34 @@ The complete JavaScript implementation is made up of three distinct parts:
 
 ECMA-262 describes it like this:
 
-```
-ECMAScript can provide core scripting capabilities for a variety of host environments, and therefore the core scripting language is specified... apart from any particular host environment.
-```
+- ECMAScript can provide core scripting capabilities for a variety of host environments, and therefore the core scripting language is specified... apart from any particular host environment.
 
-A Web browser is considered a host environment for ECMAScript, but it is not the only host environment
+- A Web browser is considered a host environment for ECMAScript, but it is not the only host environment
 
-Apart from DOM and BOM, each browser has its own implementation of the ECMAScript interface
+- Apart from DOM and BOM, each browser has its own implementation of the ECMAScript interface
 
 ## Document Object Model (DOM)
 
-- DOM is an object representation of all elements on a web page 
+- is an object representation of all elements on a web page 
 
-- DOM acts as a bridge between the content and the browser
+- acts as a bridge between the content and the browser
 
-- DOM is a tree like structure, representing the content, style, structure 
+- is a tree like structure, representing the content, style, structure 
 
-- DOM is a language neutral API
+- is a language neutral API
 
-- 
+- dynamic
+
+- Every DOM element is a node
+
+- you can manipulate web pages using the DOM
+
+### DOM Important Properties and Methods
+
+Here are a few important DOM properties and methods
+![DOM properties/methods](../js-images/domproperties-methods.png)
+
+
 
 The DOM maps out an entire page as a document composed of a hierarchy of nodes like a tree structure and using the DOMAPI nodes can be removed, added, and replaced.
 
@@ -49,7 +58,6 @@ Introduced several new modules of the DOM to deal with new types of interfaces:
 
 ### DOM Level 3
 
-Further extends the DOM with the introduction of methods to load and save documents in a uniform way (contained in a new module called DOM Load and Save) as well as methods to validate a document (DOM Validation). In Level 3, the DOM Core is extended to support all of XML 1.0, including XML Infoset, XPath, and XML Base.
 
 Note that the DOM is not JavaScript-specific, and indeed has been implemented in numerous other languages. For Web browsers, however, the DOM has been implemented using ECMAScript and now makes up a large part of the JavaScript language.
 
