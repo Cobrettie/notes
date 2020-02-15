@@ -22,7 +22,15 @@ Apart from DOM and BOM, each browser has its own implementation of the ECMAScrip
 
 ## Document Object Model (DOM)
 
-The Document Object Model (DOM) is an application programming interface (API) for HTML as well as XML.
+- DOM is an object representation of all elements on a web page 
+
+- DOM acts as a bridge between the content and the browser
+
+- DOM is a tree like structure, representing the content, style, structure 
+
+- DOM is a language neutral API
+
+- 
 
 The DOM maps out an entire page as a document composed of a hierarchy of nodes like a tree structure and using the DOMAPI nodes can be removed, added, and replaced.
 
