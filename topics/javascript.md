@@ -85,6 +85,19 @@ Event Handlers
   - .target is one of the most important properties of the Event Object
     - .target gives us all info about the DOM node where the event happened
 
+Stop Events From Going Further Up the Chain
+- You may find a need to stop your events from continuing up the DOM 'tree'
+- To do this, use the .stopPropagation() method
+  - .stopPropagation() will effectively stop our event from going further up the chain
+  - Used on a child element, whose parent elements have a similar event listener that you don't want to run
+    - if .stopPropagation() is not used on the child element, then the parent elements event will run as well 
+
+Stop an Elements Native Default Reaction to Certain Events
+- Some elements have default actions on certain events, and you may need to eliminate that default action
+- To do this, use the .preventDefault() method
+  - .preventDefault is a method on the event object, and it will stop an HTML element from reacting in its default way.
+  - Used less than .stopPropagation(), but important to know about
+
 ## Browser Object Model (BOM)
 
 Browsers feature a Browser Object Model (BOM) that allows access and manipulation of the browser window. Using the BOM, developers can move the window, change text in the status bar, and perform other actions that do not directly relate to the page content.
@@ -404,3 +417,6 @@ const newRect = new Rectangle(400, 500);
 - <strong>super</strong> = keyword used to access & call functions on an object's parent
   - takes place of Object.create()
   - binds our object's prototypes together
+
+## Components in JavaScript
+
